@@ -19,11 +19,11 @@ public class Polar(double angle, double radius)
 
         public static Polar operator +( Polar a, Polar b )
         {
-            return (a.NormalForm() + b.NormalForm()).PolarForm();
+            return Complex.PolarForm(a.NormalForm() + b.NormalForm());
         }
         public static Polar operator -( Polar a, Polar b )
         {
-            return (a.NormalForm() - b.NormalForm()).PolarForm();
+            return Complex.PolarForm(a.NormalForm() - b.NormalForm());
         }
         public static Polar operator *( Polar a, Polar b )
         {
